@@ -44,11 +44,7 @@ public class Main {
         int index3 = 0;
         int bonus = 5000;
         for (int j : inputArray3) {
-            if (j > bonus) {
-                outputArray3[index3] = true;
-            } else {
-                outputArray3[index3] = false;
-            }
+            outputArray3[index3] = j > bonus;
             index3++;
         }
         System.out.println(Arrays.toString(inputArray3));
@@ -58,8 +54,8 @@ public class Main {
         int[] inputArray4 = {1000, -1500, 2000, 3000, -7500};
         boolean[] outputArray4 = new boolean[5];
         int index4 = 0;
-        for (int i = 0; i < inputArray4.length; i++) {
-            if (inputArray4[i] > 0) {
+        for (int j : inputArray4) {
+            if (j > 0) {
                 outputArray4[index4] = true;
             } else {
                 outputArray4[index4] = false;
