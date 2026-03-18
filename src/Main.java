@@ -65,14 +65,11 @@ public class Main {
         //task 5
         System.out.println("-----TASK 5-----");
         int[] inputArray5 = {5000, 0, -1500, 2000, 7000};
-        boolean[] outputArray5 = new boolean[1];
-        boolean rent = true;
+        int[] outputArray5 = new int[1];
+        int rent = 0;
         for(int profit : inputArray5){
             if (profit > 0) {
-                rent = true;
-            } else {
-                rent = false;
-                break;
+                rent++;
             }
         }
         outputArray5[0] = rent;
